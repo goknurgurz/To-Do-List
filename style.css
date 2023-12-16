@@ -1,0 +1,90 @@
+body {
+    background-color: #3725f3;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+.box {
+    background-color: black;
+    width: 40%;
+    height: 600px;
+    border: none;
+    border-radius: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box h1 {
+    text-transform: capitalize;
+    color: white;
+    font-size: 25px;
+}
+
+.box .input-btn {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+}
+
+.box .input-btn input[type='text'] {
+    width: 70%;
+    background-color: transparent;
+    border: solid 1.5px #490cf2;
+    color: white;
+    padding-left: 10px;
+}
+
+.box .input-btn input[type='text']:focus {
+    outline: none;
+}
+
+.box .input-btn input[type='button'] {
+    width: 30%;
+    background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    color: aliceblue;
+    width: 100%;
+    overflow-y: scroll;
+    height: 90%;
+}
+
+ul li {
+    margin: 20px auto;
+    width: 90%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    padding: 0 5px;
+}
+
+ul li .delete-edit button {
+    background-color: transparent;
+    border: none;
+}
+
+ul li .delete-edit button img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
